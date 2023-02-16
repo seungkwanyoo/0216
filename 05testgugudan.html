@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05testgugudan.html</title>
+    <style>
+        button {
+            background-color: rgb(106, 106, 233);
+            color: aliceblue;
+            padding: 7px;
+            font-size: 16pt;
+            border-radius: 10px;
+        }
+        * {
+            font-size: 20pt;
+        }
+    </style>
+<script>
+        function mypass() {
+            var kor=0, eng=0, hap=0, age=0;
+
+            kor=85; eng=80; 
+            hap=kor+eng;
+            avg=hap/2;
+            document.getElementById('display').innerHTML='<h3>총점='+hap+'</h3>';
+        }
+
+        function mytest() {
+            var su =0, nmg=0, result='';
+            su=6;
+        
+        }
+
+        function mynumber() {
+            var num=0, message='';
+            num= 7; //음수 제로 양수
+        }
+
+        function mygugudan2222() {
+            var dan=0, message='';
+
+            dan=3;
+            console.log(dan,' 구구단출력');
+            console.log(dan,'*',1,'=',(3*1));
+            console.log(dan,'*',2,'=',(3*2));
+            console.log(dan,'*',3,'=',(3*3));
+            console.log(dan,'*',4,'=',(3*4));
+            console.log(dan,'*',5,'=',(3*5));
+            console.log(dan,'*',6,'=',(3*6));
+            console.log(dan,'*',7,'=',(3*7));
+            console.log(dan,'*',8,'=',(3*8));
+            console.log(dan,'*',9,'=',(3*9));
+
+            document.write(dan,' 구구단출력','<br>');
+            document.write(dan,'*',1,'=',(3*1),'<br>');
+            document.write(dan,'*',2,'=',(3*2),'<br>');
+            document.write(dan,'*',3,'=',(3*3),'<br>');
+            document.write(dan,'*',4,'=',(3*4),'<br>');
+            document.write(dan,'*',5,'=',(3*5),'<br>');
+            document.write(dan,'*',6,'=',(3*6),'<br>');
+            document.write(dan,'*',7,'=',(3*7),'<br>');
+            document.write(dan,'*',8,'=',(3*8),'<br>');
+            document.write(dan,'*',9,'=',(3*9),'<br>');
+        }
+        function mygugudan() {
+            var dan=0, message='';
+
+            dan=20;
+            for(var k=1; k<10; k=k+1) {
+                document.write(dan,'*',k,'=',(dan*k),'<br>');
+            }
+        }
+
+</script>
+</head>
+<body>
+    <div id="display">
+        <img src="./pizza_images/apple.png" width="100" height="90">
+        <img src="./pizza_images/apple.png" width="100" height="90">
+        <img src="./pizza_images/apple.png" width="100" height="90">
+    </div>
+    <h2>05testgugudan.html</h2>
+    <button onclick="mypass()">점수확인</button>
+    <button onclick="mytest()">홀수짝수구별</button>
+    <button onclick="mynumber()">정수</button>
+    <button onclick="mygugudan()">구구단</button>
+    <br>
+    
+
+    
+</body>
+</html>
